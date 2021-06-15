@@ -14,9 +14,6 @@ class InputValidatorTest {
     @Test
     void input() {
 
-        //Act
-
-
         InputStream sysInBackup = System.in; // backup System.in to restore it later
         ByteArrayInputStream in = new ByteArrayInputStream("123".getBytes());
         System.setIn(in);
