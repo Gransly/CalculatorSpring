@@ -1,13 +1,12 @@
 package service;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Calculator {
 
-    private List<Integer> numbers;
+    private final List<Integer> numbers;
     public Calculator(int[] number){
         numbers = Arrays.stream(number).boxed().collect(Collectors.toList());
     }
